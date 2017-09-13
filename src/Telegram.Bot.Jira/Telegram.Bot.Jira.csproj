@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Sebastian Karasek</Authors>
+    <Company>Fluffy Fairy Games</Company>
+    <Description>Telegram Jira Bot</Description>
+    <PackageProjectUrl>https://github.com/FluffyFairyGames/telegram-jira-bot</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/FluffyFairyGames/telegram-jira-bot/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright (c) 2017 Fluffy Fairy Games</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Telegram.Bot.Core\Telegram.Bot.Core.csproj" />
+  </ItemGroup>
+
+</Project>
