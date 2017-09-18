@@ -16,6 +16,7 @@ namespace Telegram.Bot.Web
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
+                .AddEnvironmentVariables()
                 .Build();
             var builder = new DbContextOptionsBuilder<BotDbContext>();
             var connectionstring = configuration.GetConnectionString("TelegramSQLConnection");
