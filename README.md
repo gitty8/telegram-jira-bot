@@ -25,6 +25,7 @@ The Directory `Telegram.Bot.Web` contains two config files:
      - `Telegram:JiraBot:WebToken` Some random secret which is appended to the url. For examle `123456789`.
      - `Telegram:JiraBot:Endpoint` The url where bot messages are processed. For example `https://jira.bot/api/jirabot/update/123456789`. 
      - `Telegram:JiraBot:JiraWebhookUrl` The url where jira webhooks are processed. For examle `https:/jira.bot/api/jirabot/webhook/`.
+     - `ConnectionString:TelegramSQLConnection` SQL Connection string where the chat-webhook mapping is saved.
      
  2. `web.config` here you can modify the webserver settings. For more information visit https://support.microsoft.com/EN-US/help/815178.
  
